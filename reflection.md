@@ -2,3 +2,5 @@ Use this file to record your reflection on this assignment.
 
 - What are your initial impressions of how `Encapsulation` affects your programming?
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+
+Encapsulation can make programming a bit trickier because you have to consider which attributes of your program should be public or private depending on whether or not they need to be accessed by other classes. Building the individual classes was good practice for me because I got to work on making constructors, getters, and setters. The main challenge for me was putting all of the classes together in the train class. Also, sometimes I got confused about where I needed to use a getter vs. when I could just use a .attribute (like using .name vs getName()). I missed the Thursday class which made the assignment more challenging, but I used Discord, TA hours, and office hours to help catch up. I would recommend that someone doing this assignment in the future use these resources because there will probably be points where you get stuck and these resources are super helpful. 

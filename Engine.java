@@ -4,7 +4,12 @@ public class Engine {
     private FuelType f;
     private double currentfuel; 
     private double maxfuel;
-    //constructor
+    
+    /**
+     * Engine constructor
+     * @param f
+     * @param currentfuel
+     */
     public Engine(FuelType f, double currentfuel){
         this.f = f;
         this.currentfuel = currentfuel;
@@ -15,22 +20,22 @@ public class Engine {
     public double getCurrentfuel(){
         return this.currentfuel;
     }
-    /**Accessor for current fuel level */
+    /**Accessor for max fuel level */
     public double getMaxfuel(){
         return this.maxfuel;
     }
-     /**Accessor for current fuel level */
+     /**Accessor for fuel type */
      public FuelType getfueltype(){
         return this.f;
     }
 
-    //refuel method
+    /** Refuels the engine */
     public void refuel() {
         currentfuel = maxfuel;
         System.out.println("New fuel level: " + currentfuel);
     }
 
-    //go method
+    /** Runs the engine */
     public boolean go() {
         boolean notempty = true;
 
@@ -42,7 +47,10 @@ public class Engine {
         }   
         return notempty; 
     }
-    //main
+    /**
+     * Main method
+     * @param args
+     */
     public static void main(String[] args) {
         Engine myEngine = new Engine(FuelType.ELECTRIC, 150);
 
